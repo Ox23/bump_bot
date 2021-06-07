@@ -16,6 +16,6 @@ async def on_connect():
     while True:
         await channel.send('!d bump')
         print(f'bumped')
-        time.sleep(7230)
+        await asyncio.sleep(9000)
 
 client.run(token, bot=False)
